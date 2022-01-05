@@ -232,7 +232,7 @@ header nav ul li a span {
 
 @media (max-width: 700px) {
   body {
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
   }
   header .icon img#hamburger {
@@ -307,13 +307,15 @@ body.destination-body {
   margin-left: 50px;
 }
 #destination > p,
-#crew > p {
+#crew > p,
+#tech > p {
   font-size: 28px;
   letter-spacing: 4.72px;
 }
 
 #destination > p span,
-#crew > p span {
+#crew > p span,
+#tech > p span {
   font-weight: 700;
   margin-right: 28px;
   opacity: 0.25;
@@ -432,7 +434,8 @@ body.destination-body {
     margin-top: 40px;
   }
   #destination > p,
-  #crew > p {
+  #crew > p,
+  #tech > p {
     font-size: 20px;
   }
   #destination .content {
@@ -469,7 +472,8 @@ body.destination-body {
     margin-left: 0;
   }
   #destination > p,
-  #crew > p {
+  #crew > p,
+  #tech > p {
     text-align: center;
     font-size: 16px;
   }
@@ -632,5 +636,142 @@ body.destination-body {
   #crew .content ul {
     bottom: auto;
     top: -50px;
+  }
+}
+
+/* Technology Page */
+.tech-body {
+  background-image: url(../Images/background-technology-desktop.jpg);
+}
+
+#tech {
+  text-transform: uppercase;
+  margin-top: 76px;
+  margin-left: 50px;
+}
+
+#tech .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 70px;
+  align-items: center;
+}
+
+#tech .content .text h4 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+}
+
+#tech .content .text h1 {
+  font-family: Bellefair;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  margin: 0;
+}
+
+#tech .content .text p {
+  max-width: 444px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  text-transform: capitalize;
+}
+
+#tech .content .text ul {
+  font-family: Bellefair;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#tech .content .text ul li {
+  cursor: pointer;
+  background-color: transparent;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #ffffff40;
+  position: relative;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#tech .content .text ul li a {
+  font-size: 32px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#tech .content .text ul li.active {
+  background-color: white;
+}
+
+#tech .content .text ul li.active a {
+  color: black;
+}
+
+#tech .content .text ul li:not(.active):hover {
+  border-color: white;
+}
+
+#tech .content .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+@media (max-width: 1390px) {
+  #tech {
+    margin: 60px auto;
+  }
+  #tech .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  #tech .content .image {
+    width: 768px;
+    height: 310px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Images/image-launch-vehicle-landscape.jpg);
+  }
+  #tech .content .image img {
+    display: none;
+  }
+  #tech .content .text {
+    text-align: center;
+    flex-direction: column;
+    gap: 45px;
+  }
+  #tech .content .text ul {
+    flex-direction: row;
   }
 }
