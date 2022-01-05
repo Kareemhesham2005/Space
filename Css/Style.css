@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
 
+/* Home Page */
 body {
   padding: 10px 20px;
   color: white;
   background-image: url(../Images/background-home-desktop.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   font-family: "Barlow Condensed", sans-serif;
   height: 100vh;
 }
@@ -292,5 +292,203 @@ header nav ul li a span {
   #home .explore a:hover::before {
     width: 275px;
     height: 275px;
+  }
+}
+
+/* MOON Page */
+body.moon-body {
+  background-image: url(../Images/background-destination-desktop.jpg);
+}
+#moon {
+  text-transform: uppercase;
+  margin-top: 76px;
+  margin-left: 50px;
+}
+#moon > p {
+  font-size: 28px;
+  letter-spacing: 4.72px;
+}
+
+#moon > p span {
+  font-weight: 700;
+  margin-right: 28px;
+  opacity: 0.25;
+}
+
+#moon .content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 100px;
+  gap: 70px;
+}
+
+#moon .content ul {
+  list-style: none;
+}
+
+#moon .content ul li {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+
+#moon .content ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+
+#moon .content ul li::before,
+#moon .content ul li a {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#moon .content ul li::before {
+  content: "";
+  background-color: white;
+  opacity: 0;
+  width: calc(100% + 4px);
+  height: 3px;
+  position: absolute;
+  left: -2px;
+  top: 30px;
+  bottom: 0%;
+  mix-blend-mode: normal;
+}
+
+#moon .content ul li.active::before {
+  opacity: 1;
+}
+
+#moon .content ul li:not(.active):hover::before {
+  opacity: 0.5;
+}
+
+#moon .content ul li:not(.active):hover a {
+  color: #d0d6f9;
+}
+
+#moon .content p.first {
+  font-size: 100px;
+  font-family: "Bellefair", serif;
+  margin: 40px 0;
+}
+
+#moon .content p.second {
+  font-size: 18px;
+  color: #d0d6f9;
+  text-transform: capitalize;
+  font-family: "Barlow", sans-serif;
+  line-height: 32px;
+  position: relative;
+  max-width: 444px;
+  height: 128px;
+  margin-bottom: 55px;
+}
+
+#moon .content p.second::before {
+  content: "";
+  height: 1px;
+  width: calc(100% + 4px);
+  left: 2px;
+  bottom: -55px;
+  position: absolute;
+  background-color: white;
+}
+
+#moon .content .statiscs {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#moon .content .statiscs > div p:first-child {
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color: #d0d6f9;
+}
+
+#moon .content .statiscs > div p:last-child {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+}
+
+@media (max-width: 1100px) {
+  body.moon-body {
+    background-image: url(../Images/background-destination-tablet.jpg);
+  }
+  #moon {
+    margin-top: 40px;
+  }
+  #moon > p {
+    font-size: 20px;
+  }
+  #moon .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 50px;
+  }
+  #moon .content img {
+    width: 300px;
+  }
+  #moon .content .text {
+    text-align: center;
+  }
+  #moon .content p.first {
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+  #moon .content p.second {
+    font-size: 16px;
+    max-width: 575px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  body.moon-body {
+    background-image: url(../Images/background-destination-mobile.jpg);
+  }
+  #moon {
+    margin-left: 0;
+  }
+  #moon > p {
+    text-align: center;
+    font-size: 16px;
+  }
+  #moon .content img {
+    width: 150px;
+  }
+  #moon .content ul {
+    width: 100%;
+    margin-left: -20px;
+  }
+  #moon .content p.first {
+    font-size: 56px;
+  }
+  #moon .content p.second {
+    line-height: 25px;
+    font-size: 15px;
+  }
+  #moon .content ul li a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+  #moon .content .statiscs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 }
