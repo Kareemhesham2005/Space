@@ -26,7 +26,3 @@ window.onresize = function () {
     closeBtn.style.display = "none";
   }
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> b6107314aba147b3bf389b5da430783a791d259b
