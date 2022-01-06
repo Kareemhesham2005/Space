@@ -33,14 +33,14 @@ let src_portrait;
 let src_landscape;
 
 if (heading.innerText == arrayOfPages[0]) {
-  src_portrait = "/Images/image-spaceport-portrait.jpg";
-  src_landscape = "/Images/image-spaceport-landscape.jpg";
+  src_portrait = "../Images/image-spaceport-portrait.jpg";
+  src_landscape = "../Images/image-spaceport-landscape.jpg";
 } else if (heading.innerText == arrayOfPages[1]) {
-  src_portrait = "/Images/image-launch-vehicle-portrait.jpg";
-  src_landscape = "/Images/image-launch-vehicle-landscape.jpg";
+  src_portrait = "../Images/image-launch-vehicle-portrait.jpg";
+  src_landscape = "../Images/image-launch-vehicle-landscape.jpg";
 } else {
-  src_portrait = "/Images/image-space-capsule-portrait.jpg";
-  src_landscape = "/Images/image-space-capsule-landscape.jpg";
+  src_portrait = "../Images/image-space-capsule-portrait.jpg";
+  src_landscape = "../Images/image-space-capsule-landscape.jpg";
 }
 
 if (window.innerWidth <= 1390) {
