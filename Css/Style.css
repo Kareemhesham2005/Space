@@ -696,8 +696,12 @@ body.destination-body {
 }
 
 #tech .content .text ul li {
+  font-size: 32px;
+  color: white;
   cursor: pointer;
   background-color: transparent;
+  text-align: center;
+  line-height: 80px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -715,8 +719,6 @@ body.destination-body {
 }
 
 #tech .content .text ul li a {
-  font-size: 32px;
-  color: white;
   display: block;
   text-decoration: none;
   position: absolute;
@@ -731,9 +733,6 @@ body.destination-body {
 
 #tech .content .text ul li.active {
   background-color: white;
-}
-
-#tech .content .text ul li.active a {
   color: black;
 }
 
@@ -791,8 +790,6 @@ body.destination-body {
   #tech .content .text ul li {
     width: 60px;
     height: 60px;
-  }
-  #tech .content .text ul li a {
     font-size: 24px;
   }
   #tech .content .text h1 {
@@ -809,8 +806,6 @@ body.destination-body {
   #tech .content .text ul li {
     width: 40px;
     height: 40px;
-  }
-  #tech .content .text ul li a {
     font-size: 16px;
   }
   #tech .content .text h4 {
