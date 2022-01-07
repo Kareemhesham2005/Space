@@ -791,6 +791,7 @@ body.destination-body {
     width: 60px;
     height: 60px;
     font-size: 24px;
+    line-height: 60px;
   }
   #tech .content .text h1 {
     font-size: 40px;
@@ -807,6 +808,7 @@ body.destination-body {
     width: 40px;
     height: 40px;
     font-size: 16px;
+    line-height: 40px;
   }
   #tech .content .text h4 {
     font-size: 14px;
