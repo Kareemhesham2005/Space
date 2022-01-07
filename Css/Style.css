@@ -338,17 +338,14 @@ body.destination-body {
   display: inline-block;
   margin-right: 30px;
   position: relative;
-}
-
-#destination .content ul li a {
-  text-decoration: none;
   color: white;
   font-size: 16px;
   letter-spacing: 2.7px;
+  cursor: pointer;
 }
 
 #destination .content ul li::before,
-#destination .content ul li a {
+#destination .content ul li {
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -377,7 +374,7 @@ body.destination-body {
   opacity: 0.5;
 }
 
-#destination .content ul li:not(.active):hover a {
+#destination .content ul li:not(.active):hover {
   color: #d0d6f9;
 }
 
@@ -497,7 +494,7 @@ body.destination-body {
     line-height: 25px;
     font-size: 15px;
   }
-  #destination .content ul li a {
+  #destination .content ul li {
     font-size: 14px;
     letter-spacing: 2.36px;
   }
@@ -565,13 +562,10 @@ body.destination-body {
 }
 
 #crew .content ul li {
+  cursor: pointer;
   display: inline-block;
   margin-right: 25px;
-}
-
-#crew .content ul li a {
   position: relative;
-  display: block;
   width: 15px;
   height: 15px;
   opacity: 0.17;
@@ -588,11 +582,11 @@ body.destination-body {
   -o-transition: 0.3s;
 }
 
-#crew .content ul li.active a {
+#crew .content ul li.active {
   opacity: 1;
 }
 
-#crew .content ul li:not(.active):hover a {
+#crew .content ul li:not(.active):hover {
   opacity: 0.5;
 }
 

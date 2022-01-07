@@ -3,6 +3,7 @@ let menuCloseBtn = document.querySelector("#close");
 let nav = document.querySelector("nav");
 let closeBtn = document.querySelector("nav img");
 let menu = document.querySelector("nav ul");
+let img = document.querySelector("#tech .image img");
 
 menuBtn.onclick = function () {
   nav.style.cssText += "width: 70vw;";
